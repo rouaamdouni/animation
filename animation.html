@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <link rel="stylesheet" href="animation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@1,300&display=swap');
+    </style>
+</head>
+
+<body>
+    
+    <div class="page1">
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="https://media-prd.coachella.com/templates/template10/svgs/coachella-logo.svg" alt="logo">
+                </div>
+                <div>
+                    <img alt="" class="c-navigation-divider"
+                        src="https://media-prd.coachella.com/templates/template10/images/nav-divider@3x.png">
+                </div>
+
+                <span class="c-navigation__dates">APR 15-17 &amp; 22-24</span>
+            </div>
+            <div class="about-event">
+                <div>
+                    <a href="">Music</a>
+                </div>
+                <div>
+                    <a href="">Passes</a>
+                </div>
+                <div>
+                    <a href="">Plan</a>
+                </div>
+                <div>
+                    <a href="">Experience</a>
+                </div>
+                <div>
+                    <a href="">Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="homepage-img">
+            <h1 class="highlight">Check Coachella 2022 Highlights</h1>
+
+            <div>
+                <img src="homepage-gradient-hero-left.png" alt="">
+            </div>
+            <div>
+                <img class="eb3eb" src="homepage-gradient-hero-right.png" alt="">
+            </div>
+
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="slide">
+                    <img src="caroussel1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="caroussel2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="caroussel3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="caroussel4.jpg" alt="">
+                </div>
+            </div>
+            <div class="carousel-button">
+                <button class="left">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_68882.png" style="transform:rotateY(180deg);"
+                        alt="">
+                </button>
+                <button class="right">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_68882.png" alt="">
+                </button>
+            </div>
+            <div class="indicators">
+                <div class="indicator"></div>
+                <div class="indicator "></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="section2">
+        <div class="text">
+            <p id="info">Le Coachella Valley Music and Arts Festival (en français : « Festival de musique et d'arts de
+                la vallée
+                de Coachella », plus communément appelé « Festival de Coachella » ou « Coachella »), est un événement
+                initié par le groupe de musique Pearl Jam1,2 et organisé, depuis 1999, par Paul Tollett et sa société
+                Goldenvoice1, filiale d'AEG Live, promoteur de concerts, propriété de l'homme d'affaires Philip
+                Anschutz3. Le festival se déroule chaque année pendant six jours, sur deux fois trois jours2,
+                généralement les troisième et quatrième week-ends d'avril, à Indio, près de Los Angeles, en Californie.
+
+                Il est considéré comme l'un des plus grands festivals annuels aux États-Unis4 et dans le monde. C'est à
+                la fois un évènement musical, artistique, mondain et médiatique. Le festival est florissant sur le plan
+                financier. En 2013, la seule vente des billets a rapporté 47 millions de dollars1. En 2017, elle a
+                permis d’engranger 84 millions5.</p>
+        </div>
+        <div>
+            <button  id="fok"class="boutton">Read More</button>
+        </div>
+    </div>
+    <div class="back">
+        <img  src="mountain.png" alt="">
+    </div>
+
+    <script>
+         let boutton = document.querySelector(".boutton");
+        boutton.addEventListener("click", ()=>{
+            console.log("error");
+    document.querySelector("#info").innerHTML += "Le festival prend place au milieu des palmiers, sur un terrain de polo que les visiteurs s'approprient au fil des jours. Directement relié à Los Angeles (ville ultra prisée par les tendanceurs qui ne peuvent être que tentés d'y aller), non loin de Palm Springs, Coachella offre un lieu de rêve, un vrai dépaysement, avec son emplacement reculé en plein désert. En Californie au mois d'avril, c'est déjà l'été, l'occasion d'avoir le teint hâlé avant tout le monde. Un détail pour vous, mais pas pour l'influenceur qui doit tout faire et tout avoir avant les autres. Alors on écoute la musique et on scrute les looks (surtout) sous un soleil de plomb ou à l'ombre d'un palmier face à un beau panorama. Coachella est passé du simple statut de festival au statut d'événement culturel majeur (avec un air de parc d'attraction) où, entre chaque scènes, se trouvent des stands de nourriture et de boisson, des œuvres d'art, des pop-up store, une grande roue... De quoi se sentir dans un autre monde.";
+        }
+        );
+       
+       /* function myScript(evvent){
+            event.preventDefault
+            console.log("error");
+    document.querySelector("#info").innerHTML += "Le festival prend place au milieu des palmiers, sur un terrain de polo que les visiteurs s'approprient au fil des jours. Directement relié à Los Angeles (ville ultra prisée par les tendanceurs qui ne peuvent être que tentés d'y aller), non loin de Palm Springs, Coachella offre un lieu de rêve, un vrai dépaysement, avec son emplacement reculé en plein désert. En Californie au mois d'avril, c'est déjà l'été, l'occasion d'avoir le teint hâlé avant tout le monde. Un détail pour vous, mais pas pour l'influenceur qui doit tout faire et tout avoir avant les autres. Alors on écoute la musique et on scrute les looks (surtout) sous un soleil de plomb ou à l'ombre d'un palmier face à un beau panorama. Coachella est passé du simple statut de festival au statut d'événement culturel majeur (avec un air de parc d'attraction) où, entre chaque scènes, se trouvent des stands de nourriture et de boisson, des œuvres d'art, des pop-up store, une grande roue... De quoi se sentir dans un autre monde.";
+        }
+;*/
+            
+        let slides = document.querySelectorAll(".slide");
+        let indicators = document.querySelectorAll(".indicator");
+
+        //initaliser le slide a 0
+        slides.forEach(slide => {
+            slide.style.display = "none"
+        })
+
+        indicators.forEach(function (indicator) {
+            indicator.style.background = "white"
+        })
+
+        slides[0].style.display = "block";
+        indicators[0].style.background = "black";
+        let index = 0
+        setInterval(() => {
+            slides[index].style.display = "none";
+            indicators[index].style.background = "white";
+            console.log(index)
+            if (index + 1 >= slides.length) {
+                index = 0;
+            } else {
+                index++;
+            }
+            slides[index].style.display = "block";
+            indicators[index].style.background = "black";
+
+        }, 7000)
+
+        document.querySelector(".right").onclick = () => {
+            slides[index].style.display = "none";
+            indicators[index].style.background = "white";
+            console.log(index)
+            if (index + 1 >= slides.length) {
+                index = 0;
+            } else {
+                index++;
+            }
+            slides[index].style.display = "block";
+            indicators[index].style.background = "black";
+        }
+        document.querySelector(".left").onclick = () => {
+            slides[index].style.display = "none";
+            indicators[index].style.background = "white";
+            console.log(index)
+            if (index - 1 < 0) {
+                index = slides.length - 1;
+            } else {
+                index--;
+            }
+            slides[index].style.display = "block";
+            indicators[index].style.background = "black";
+        }
+
+        console.log(slides)
+        
+       /* document.body.onscroll = function(){
+            let height=document.body.scrollHeight;
+            let offset=document.body.offsetHeight;
+           console.log(height);
+           console.log(offset);
+
+    let bottom = document.body.scrollHeight-document.body.offsetHeight;
+console.log(bottom);
+console.log(window.scrollY);
+    if(bottom == window.scrollY){
+       alert(" wselt lelekher");
+    }
+}*/
+      
+        
+    </script>
+    
+</body>
+
+</html>
